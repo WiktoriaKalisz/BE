@@ -1,7 +1,7 @@
 <?php
-define('_DB_SERVER_', 'localhost');
-define('_DB_NAME_', 'shop');
-define('_DB_USER_', 'root');
+define('_DB_SERVER_', 'biznes-db');
+define('_DB_NAME_', 'db_1');
+define('_DB_USER_', 'user_1');
 define('_DB_PASSWD_', 'ad123min');
 define('_DB_PREFIX_', 'ps_');
 define('_MYSQL_ENGINE_', 'InnoDB');
