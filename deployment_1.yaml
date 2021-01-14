@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: be-1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: be-1
+  strategy: {}
+  template:
+    metadata:
+        creationTimestamp: null
+        labels:
+            app: be-1
+    spec:
+      containers:
+      - env:
+        image: "172.20.83.35:5000/1:latest"
+        imagePullPolicy: "Always"
+        name: be-1
+        ports:
+        - containerPort: 80
+        - containerPort: 443
+        - containerPort: 465
+        resources: {}
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes: null
+status: {}
