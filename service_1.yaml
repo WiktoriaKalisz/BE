@@ -12,11 +12,7 @@ spec:
   - name: "443"
     port: 443
     targetPort: 443
-    nodePort: 30001
-  - name: "465"
-    port: 465
-    targetPort: 465
-    nodePort: 30001
+    nodePort: 30101
   selector:
     app: be-1
   type: NodePort
